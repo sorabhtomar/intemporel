@@ -148,7 +148,8 @@ svg:not(:root) {
 }
 
 figure {
-	margin: 1em 40px;
+	margin: 0;
+	line-height: 0;
 }
 
 hr {
@@ -863,6 +864,8 @@ textarea {
 
 .site-content {
 	clear: both;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 /* ## Content Area
@@ -895,6 +898,7 @@ article {
 
 .excerpt {
 	position: relative;
+	overflow: auto;
 }
 
 .poster-main {
@@ -907,11 +911,12 @@ article {
 
 .poster-content {
 	background-color: rgba(0, 0, 0, .6);
-	padding: 2em 2em .5em;
+	padding: 2em 2em;
 }
 
 .excerpt .entry-title {
 	margin: .5em 0;
+	clear: right;
 }
 
 .poster-bg {
@@ -927,7 +932,6 @@ article {
 	width: 100%;
 	clear: both;
 	float: none;
-	
 }
 
 .poster-main .entry-title a {
@@ -938,12 +942,35 @@ article {
 	color: #E91E63;
 }
 
-.excerpt:not(.poster) {
-	padding: .5em 4em 2em;
+.entry-thumbnail {
+	width: 31.25%;
+	float: left;
+	padding-right: 1em;
 }
 
-.excerpt:not(.poster) .entry-title {
-	margin-top: 0;
+.excerpt-content {
+	width: 68.75%;
+	float: left;
+}
+
+.excerpt p {
+	margin: 0;
+}
+
+.entry-summary {
+	font-weight: 300;
+}
+
+.excerpt:not(.poster) {
+	padding: 2em;
+}
+
+.excerpt:not(.poster) .entry-summary {
+	color: rgba(0,0,0,.6);
+}
+
+.excerpt:nth-child(2n) {
+	background: #f5f5f5;
 }
 
 .sticky {
@@ -951,7 +978,6 @@ article {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
 	border-bottom: 1px solid #f5f5f5;
 }
 

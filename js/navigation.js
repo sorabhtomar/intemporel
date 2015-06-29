@@ -36,34 +36,34 @@
 
 	window.addEventListener("scroll", function(evt) {
 
-    // This value is your scroll distance from the top
-    var distance_from_top = document.body.scrollTop;
-    var header = document.getElementById("masthead");
-    var menu = header.querySelector(".menu-toggle");
-    var search = header.querySelector(".search-toggle");
-    var title = header.getElementsByTagName("h1")[0];
-    var form = header.getElementsByTagName("form")[0];
-    var content = document.getElementById("content");
+        // This value is your scroll distance from the top
+        var distance_from_top = document.body.scrollTop;
+        var header = document.getElementById("masthead");
+        var menu = header.querySelector(".menu-toggle");
+        var search = header.querySelector(".search-toggle");
+        var title = header.getElementsByTagName("h1")[0];
+        var form = header.getElementsByTagName("form")[0];
+        var content = document.getElementById("content");
 
-    // The user has scrolled to the tippy top of the page. Set appropriate style.
-    if(distance_from_top === 0){
-    	search.setAttribute("style","height:100px;line-height:100px");
-    	menu.setAttribute("style","height:100px;line-height:100px");
-    	title.setAttribute("style","height:100px;line-height:100px");
-    	masthead.setAttribute("style","position:relative");
-    	form.setAttribute("style","top:2em");
-    	content.setAttribute("style","padding-top:0");
-    }
+        // The user has scrolled to the tippy top of the page. Set appropriate style.
+        if(distance_from_top === 0){
+        	search.setAttribute("style","height:100px;line-height:100px");
+        	menu.setAttribute("style","height:100px;line-height:100px");
+        	title.setAttribute("style","height:100px;line-height:100px");
+        	masthead.setAttribute("style","position:relative");
+        	form.setAttribute("style","top:2em");
+        	content.setAttribute("style","padding-top:0");
+        }
 
-    // The user has scrolled down the page.
-    if(distance_from_top > 0){
-    	search.setAttribute("style","height:48px;line-height:48px");
-    	menu.setAttribute("style","height:48px;line-height:48px");
-    	title.setAttribute("style","height:48px;line-height:48px");
-    	masthead.setAttribute("style","position:fixed");
-    	form.setAttribute("style","top:.3em");
-    	content.setAttribute("style","padding-top:48px");
-    }
-});
+        // The user has scrolled down the page.
+        if(distance_from_top > 0){
+        	search.setAttribute("style","height:48px;line-height:48px");
+        	menu.setAttribute("style","height:48px;line-height:48px");
+        	title.setAttribute("style","height:48px;line-height:48px");
+        	masthead.setAttribute("style","position:fixed");
+        	form.setAttribute("style","top:.3em");
+        	content.setAttribute("style","padding-top:48px");
+        }
+    });
 
 } )();
