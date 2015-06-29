@@ -50,9 +50,8 @@
         	search.setAttribute("style","height:100px;line-height:100px");
         	menu.setAttribute("style","height:100px;line-height:100px");
         	title.setAttribute("style","height:100px;line-height:100px");
-        	masthead.setAttribute("style","position:relative");
         	form.setAttribute("style","top:2em");
-        	content.setAttribute("style","padding-top:0");
+        	content.setAttribute("style","padding-top:100px");
         }
 
         // The user has scrolled down the page.
@@ -60,9 +59,8 @@
         	search.setAttribute("style","height:48px;line-height:48px");
         	menu.setAttribute("style","height:48px;line-height:48px");
         	title.setAttribute("style","height:48px;line-height:48px");
-        	masthead.setAttribute("style","position:fixed");
         	form.setAttribute("style","top:.3em");
-        	content.setAttribute("style","padding-top:48px");
+        	content.setAttribute("style","padding-top:58px");
         }
     });
 
