@@ -60,7 +60,7 @@
         	menu.setAttribute("style","height:48px;line-height:48px");
         	title.setAttribute("style","height:48px;line-height:48px");
         	form.setAttribute("style","top:.3em");
-        	content.setAttribute("style","padding-top:58px");
+        	content.setAttribute("style","padding-top:48px");
         }
     });
 
