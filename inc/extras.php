@@ -86,3 +86,17 @@ function intemporel_fonts() {
 
     return $fonts_url;
 }
+
+function intemporel_excerpt ($excerpt) {
+	if( !has_excerpt($post->ID) ) {
+		$dot = '.';
+		$position = stripos($excerpt, $dot);
+		if($position) {
+			$offset = $position;
+			return substr($excerpt,0,stripos($excerpt, $dot, $offset)) . '.';
+		}
+	} else {
+		return $excerpt;
+	}
+}
+add_filter( 'the_excerpt', 'intemporel_excerpt' );
