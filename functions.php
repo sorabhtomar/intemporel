@@ -39,7 +39,6 @@ function intemporel_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 300, 250 );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -72,7 +71,7 @@ function intemporel_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'intemporel_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => 'eeeeee',
 		'default-image' => '',
 	) ) );
 }

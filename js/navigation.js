@@ -45,22 +45,34 @@
         var form = header.getElementsByTagName("form")[0];
         var content = document.getElementById("content");
 
+
         // The user has scrolled to the tippy top of the page. Set appropriate style.
         if(distance_from_top === 0){
-        	search.setAttribute("style","height:100px;line-height:100px");
-        	menu.setAttribute("style","height:100px;line-height:100px");
-        	title.setAttribute("style","height:100px;line-height:100px");
-        	form.setAttribute("style","top:2em");
-        	content.setAttribute("style","padding-top:100px");
+            if ( -1 !== title.className.indexOf( 'onscroll-height' ) ) {
+            	title.className = title.className.replace( ' onscroll-height', '' );
+                menu.className = menu.className.replace( ' onscroll-height', '' );
+                search.className = search.className.replace( ' onscroll-height', '' );
+                if (window.innerWidth <= 980) {
+                    form.setAttribute("style","top:.8em");
+                    content.setAttribute("style","padding-top:60");
+                } else {
+                    form.setAttribute("style","top:2em");
+                    content.setAttribute("style","padding-top:100px");
+                }
+            }
         }
 
         // The user has scrolled down the page.
-        if(distance_from_top > 0){
-        	search.setAttribute("style","height:48px;line-height:48px");
-        	menu.setAttribute("style","height:48px;line-height:48px");
-        	title.setAttribute("style","height:48px;line-height:48px");
-        	form.setAttribute("style","top:.3em");
-        	content.setAttribute("style","padding-top:48px");
+        if(distance_from_top > 48){
+        	if ( -1 !== title.className.indexOf( 'onscroll-height' ) ) {
+                
+            } else {
+                title.className += ' onscroll-height';
+                menu.className += ' onscroll-height';
+                search.className += ' onscroll-height';
+                form.setAttribute("style","top:.3em"); 
+                content.setAttribute("style","padding-top:48px");
+            }
         }
     });
 
