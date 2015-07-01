@@ -126,12 +126,12 @@ function intemporel_scripts() {
 	wp_enqueue_style( 'intemporel-fonts', intemporel_fonts() );
 	
 	// Add Genericons, used in the main stylesheet.
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons/genericons.css', array(), '3.3.1' );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.3.1' );
 
 	// Add Intemporel stylesheet
 	wp_enqueue_style( 'intemporel-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'intemporel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'intemporel-navigation', get_template_directory_uri() . '/js/script.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'intemporel-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -140,6 +140,17 @@ function intemporel_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'intemporel_scripts' );
+
+/**
+ * Apply theme's stylesheet to the visual editor.
+ *
+ * @uses add_editor_style() Links a stylesheet to visual editor
+ * @uses get_stylesheet_uri() Returns URI of theme stylesheet
+ */
+function intemporel_editor_styles() {
+    add_editor_style( get_stylesheet_uri() );
+}
+add_action( 'init', 'intemporel_editor_styles' );
 
 /**
  * Implement the Custom Header feature.

@@ -863,6 +863,7 @@ textarea {
 /* ## Content Area
 -------------------------------------------------*/
 
+.content,
 .content-area {
 	width: 100%;
 	background: #fff;
@@ -913,6 +914,7 @@ textarea {
 .excerpt .entry-title {
 	margin: .5em 0;
 	clear: right;
+	font-size: 1.2em;
 }
 
 .poster-bg {
@@ -943,14 +945,7 @@ textarea {
 }
 
 .excerpt .entry-thumbnail {
-	width: 31.25%;
-	float: left;
-	padding-right: 1em;
-}
-
-.excerpt-content {
-	width: 68.75%;
-	float: left;
+	margin-bottom: 1em;
 }
 
 .excerpt p {
@@ -962,7 +957,7 @@ textarea {
 }
 
 .excerpt:not(.poster) {
-	padding: 2em;
+	padding: 1em;
 }
 
 .excerpt:not(.poster) .entry-summary {
@@ -988,6 +983,7 @@ textarea {
 
 /* Single Post */
 
+.content,
 .search-no-results .page-content,
 .page .content-area,
 .single .content-area {
@@ -1012,6 +1008,7 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+.content,
 .page .entry-content,
 .single .entry-content {
 	font-weight: 300;
@@ -1381,6 +1378,22 @@ object {
 
 }
 
+@media screen and (min-width: 361px) {
+
+	.excerpt .entry-thumbnail {
+		width: 31.25%;
+		float: left;
+		margin-bottom: 0;
+		padding-right: 1em;
+	}
+
+	.excerpt-content {
+		width: 68.75%;
+		float: left;
+	}
+
+}
+
 @media screen and (min-width: 481px) {
 
 	.site-title {
@@ -1413,6 +1426,12 @@ object {
 		padding-right: 2%;
 	}
 
+	.excerpt .entry-title {
+		margin: .5em 0;
+		clear: right;
+		font-size: 1.6em;
+	}
+
 	.page .site-main,
 	.single .site-main {
 		padding: 0 2em;
@@ -1424,6 +1443,10 @@ object {
 
 	.search-form {
 		right: 10%;
+	}
+
+	.widget-area {
+		padding: 2em 2em 1em;
 	}
 
 }
@@ -1448,6 +1471,7 @@ object {
 		font-size: 3em;
 	}
 
+	.content,
 	.page .entry-content,
 	.single .entry-content {
 		font-size: 1.2em;
@@ -1458,6 +1482,16 @@ object {
 		width: 31.25%;
 		padding-right: 1em;
 		float: left;
+	}
+
+	.excerpt .entry-title {
+		margin: .5em 0;
+		clear: right;
+		font-size: 2em;
+	}
+
+	.excerpt:not(.poster) {
+		padding: 2em;
 	}
 
 }
@@ -1520,7 +1554,6 @@ object {
 	.widget-area {
 		width: 30%;
 		float: left;
-		padding: 2em 2em .5em;
 	}
 
 	.site-branding,
