@@ -21,4 +21,4 @@ The theme is in development stage and many more changes are in the way. To insta
 Documentation
 ---------------
 
-Please refer to the documentation website: [http://bansal.io/intemporel/]http://bansal.io/intemporel
+Please refer to the documentation website: http://bansal.io/intemporel
