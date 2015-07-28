@@ -1,8 +1,7 @@
 /**
- * navigation.js
+ * script.js
  *
- * Handles toggling the navigation menu for small screens and enables tab
- * support for dropdown menus.
+ * Handles toggling the navigation menu for and search box.
  */
 ( function() {
 
@@ -32,12 +31,11 @@
 		}
 	}
 
-	input.setAttribute("placeholder","Enter query & press enter");
-
 	window.addEventListener("scroll", function(evt) {
 
         // This value is your scroll distance from the top
         var distance_from_top = document.body.scrollTop;
+
         var header = document.getElementById("masthead");
         var menu = header.querySelector(".menu-toggle");
         var search = header.querySelector(".search-toggle");
@@ -46,7 +44,7 @@
         var content = document.getElementById("content");
 
 
-        // The user has scrolled to the tippy top of the page. Set appropriate style.
+        // The user has scrolled to the tippy top of the page.
         if(distance_from_top === 0){
             if ( -1 !== title.className.indexOf( 'onscroll-height' ) ) {
             	title.className = title.className.replace( ' onscroll-height', '' );

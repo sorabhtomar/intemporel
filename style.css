@@ -1,14 +1,14 @@
 /*
 Theme Name: Intemporel
-Theme URI: http://code.bansal.io/intemporel/
+Theme URI: http://bansal.io/intemporel/
 Author: Deepak Bansal
 Author URI: http://bansal.io
-Description: Classic theme with clean layout and standard typography. Minimal colors responsive WordPress theme for blogs and magazines.
-Version: 1.0.0
+Description: Modern theme with clean layout and standard typography. Minimal colors responsive WordPress theme for blogs and magazines inspired from Google's material design.
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: intemporel
-Tags: right-sidebar, responsive-layout, custom-menu, sticky-post, theme-options, threaded-comments, translation-ready, white
+Tags: right-sidebar, responsive-layout, custom-menu, sticky-post, threaded-comments, translation-ready, white
 
 Intemporel is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -584,8 +584,7 @@ textarea {
 .site-search {
 	display: inline-block;
 	width: 20%;
-	float: left;
-	float: left;
+	float: right;
 	padding: 0;
 	margin: 0;
 }
@@ -956,12 +955,20 @@ textarea {
 	font-weight: 300;
 }
 
-.excerpt:not(.poster) {
+.excerpt {
 	padding: 1em;
 }
 
-.excerpt:not(.poster) .entry-summary {
+.excerpt .poster {
+	margin: -1em;
+}
+
+.excerpt .entry-summary {
 	color: rgba(0,0,0,.6);
+}
+
+.poster-content .entry-summary {
+	color: rgba(255, 255, 255, .87);
 }
 
 .excerpt:nth-child(2n) {
@@ -1042,7 +1049,7 @@ textarea {
 	margin-top: 0;
 }
 
-/* Entry Meta & Footer ICONS */
+/* Entry Meta & Footer Icons */
 
 .genericon,
 .entry-footer a:before,
@@ -1270,7 +1277,7 @@ textarea:focus {
 .site-footer {
 	background: #E8EAF6;
 	border-top: 4px solid #3F51B5;
-	box-shadow: 0 -1px 5px rgba(0,0,0.3);
+	box-shadow: 0 -1px 5px rgba(0,0,0.2);
 	padding: 1em;
 }
 
@@ -1376,6 +1383,26 @@ object {
 		overflow: scroll;
 	}
 
+	.search-form {
+		right: 13%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.search-form {
+		right: 11%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.search-form {
+		right: 15%;
+	}
+
 }
 
 @media screen and (min-width: 361px) {
@@ -1441,10 +1468,6 @@ object {
 		padding: 1em;
 	}
 
-	.search-form {
-		right: 10%;
-	}
-
 	.widget-area {
 		padding: 2em 2em 1em;
 	}
@@ -1490,8 +1513,12 @@ object {
 		font-size: 2em;
 	}
 
-	.excerpt:not(.poster) {
+	.excerpt {
 		padding: 2em;
+	}
+
+	.excerpt .poster {
+		margin: -2em;
 	}
 
 }
@@ -1512,8 +1539,8 @@ object {
 		clear: both;
 		width: 100%;
 		margin-left: 0;
-		margin-top: -50px;
-		transition: all .5s;
+		margin-top: -100px;
+		transition: all .3s;
 		position: absolute;
 		overflow: visible;
 	}

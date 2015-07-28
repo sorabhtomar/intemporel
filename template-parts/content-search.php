@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('excerpt'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<figure class="entry-thumbnail">
 		<?php the_post_thumbnail( 'medium' ) ?>
 	</figure>

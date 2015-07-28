@@ -72,6 +72,12 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	add_action( 'wp_head', 'intemporel_render_title' );
 endif;
 
+/**
+ * Calls Google fonts
+ *
+ * Enqueued in functions.php
+ */
+
 function intemporel_fonts() {
     $fonts_url = '';
 	$font_families = array();
@@ -87,7 +93,16 @@ function intemporel_fonts() {
     return $fonts_url;
 }
 
+/**
+ * Excerpt till first period (.)
+ * Will be overridden if an excerpt defined by post authors
+ *
+ * @param Default Excerpt - First 55 words
+ * @return Content till first period
+ */
+
 function intemporel_excerpt ($excerpt) {
+	global $post;
 	if( !has_excerpt($post->ID) ) {
 		$dot = '.';
 		$position = stripos($excerpt, $dot);
@@ -100,3 +115,42 @@ function intemporel_excerpt ($excerpt) {
 	}
 }
 add_filter( 'the_excerpt', 'intemporel_excerpt' );
+
+/**
+ * Adds a color scheme to admin area similar to the theme's styles
+ *
+ * Users can change their color schemes in Users > Your Profile
+ */
+
+function intemporel_color_scheme() {
+	wp_admin_css_color(
+		'intemporel', __( 'Intemporel', 'intemporel' ),
+		get_stylesheet_directory_uri() . '/admin-color-schemes/intemporel/colors.css',
+		array( '#303f9f', '#3F51B5', '#ff4081', '#f50057' )
+	);
+}
+add_action( 'admin_init', 'intemporel_color_scheme');
+
+/**
+ * Post Class Filter
+ *
+ * Adds extra classes to certain templates
+ */
+
+function intemporel_post_class( $classes ) {
+
+	global $post;
+	$template = get_page_template_slug( $post->ID );
+
+	if( ! is_singular() ) {
+		$classes[] = 'excerpt';
+	}
+
+	if( $template == 'template-parts/content-poster' ) {
+		$classes[] = 'poster';
+	}
+
+	return $classes;
+}
+
+add_filter( 'post_class', 'intemporel_post_class' );
