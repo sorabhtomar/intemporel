@@ -21,6 +21,10 @@ Intemporel is a responsive WordPress theme. It's a modern theme with clean layou
 * Comes with an additional admin color scheme. You can change your admin color scheme on Users > Your Profile page.
 == Changelog ==
 
+= 1.0.3 =
+* Added Color Customization Options in Theme Customizer
+* Fixed Header Image
+
 = 1.0.2 =
 * Text Domain bug addressed
 

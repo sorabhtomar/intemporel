@@ -22,3 +22,16 @@ Documentation
 ---------------
 
 Please refer to the documentation website: http://bansal.io/intemporel
+
+Changelog
+---------------
+
+1.0.3
+* Added Color Customization Options in Theme Customizer
+* Fixed Header Image
+
+1.0.2
+* Text Domain bug addressed
+
+1.0.1
+* Added Intemporel Admin Color Scheme
