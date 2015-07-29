@@ -21,9 +21,13 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'intemporel' ); ?></a>
-
+		
 	<header id="masthead" class="site-header" role="banner">
+	<?php if ( get_header_image() ) : ?>
+		<div style="background-image:url(<?php header_image(); ?>)" class="site-branding clear">
+	<?php else : ?>
 		<div class="site-branding clear">
+	<?php endif; ?>
 			<button class="menu-toggle toggle" aria-controls="primary-menu" aria-expanded="false"><span class="genericon genericon-menu"></span></button>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<div class="site-search">

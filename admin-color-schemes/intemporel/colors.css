@@ -27,29 +27,29 @@ input[type=radio]:checked:before {
 /* Core UI */
 .wp-core-ui .button-primary {
   background: #ff4081;
-  border-color: #80a583;
+  border-color: #F48FB1;
   color: white;
-  -webkit-box-shadow: inset 0 1px 0 #cbdacc, 0 1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 1px 0 #cbdacc, 0 1px 0 rgba(0, 0, 0, 0.15); }
+  -webkit-box-shadow: inset 0 1px 0 #FCE4EC, 0 1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 0 #FCE4EC, 0 1px 0 rgba(0, 0, 0, 0.15); }
   .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
-    background: #8faf91;
-    border-color: #719a74;
+    background: #f50057;
+    border-color: #E91E63;
     color: white;
-    -webkit-box-shadow: inset 0 1px 0 #bccfbd;
-    box-shadow: inset 0 1px 0 #bccfbd; }
+    -webkit-box-shadow: inset 0 1px 0 #F8BBD0;
+    box-shadow: inset 0 1px 0 #F8BBD0; }
   .wp-core-ui .button-primary:focus {
-    -webkit-box-shadow: inset 0 1px 0 #bccfbd, 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
-    box-shadow: inset 0 1px 0 #bccfbd, 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8); }
+    -webkit-box-shadow: inset 0 1px 0 #F8BBD0, 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+    box-shadow: inset 0 1px 0 #F8BBD0, 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8); }
   .wp-core-ui .button-primary:active {
-    background: #80a583;
-    border-color: #719a74;
+    background: #F48FB1;
+    border-color: #E91E63;
     color: white;
     -webkit-box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
     box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8); }
   .wp-core-ui .button-primary[disabled], .wp-core-ui .button-primary:disabled, .wp-core-ui .button-primary.button-primary-disabled, .wp-core-ui .button-primary.disabled {
     color: #c7d1c8 !important;
     background: #86a989 !important;
-    border-color: #719a74 !important;
+    border-color: #E91E63 !important;
     text-shadow: none !important; }
 .wp-core-ui .wp-ui-primary {
   color: #fff;
@@ -63,9 +63,9 @@ input[type=radio]:checked:before {
   color: #ff4081; }
 .wp-core-ui .wp-ui-notification {
   color: #fff;
-  background-color: #f50057; }
+  background-color: #E91E63; }
 .wp-core-ui .wp-ui-text-notification {
-  color: #f50057; }
+  color: #E91E63; }
 .wp-core-ui .wp-ui-text-icon {
   color: #f2fcff; }
 
@@ -78,7 +78,7 @@ input[type=radio]:checked:before {
   color: #3f51b5; }
 
 .view-switch a:hover:before {
-  color: #f50057; }
+  color: #E91E63; }
 
 .post-com-count:hover:after {
   border-top-color: #3f51b5; }
@@ -88,10 +88,10 @@ input[type=radio]:checked:before {
   background-color: #3f51b5; }
 
 strong .post-com-count:after {
-  border-top-color: #f50057; }
+  border-top-color: #E91E63; }
 
 strong .post-com-count span {
-  background-color: #f50057; }
+  background-color: #E91E63; }
 
 /* Admin Menu */
 #adminmenuback, #adminmenuwrap, #adminmenu {
@@ -149,7 +149,7 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.curre
 /* Admin Menu: bubble */
 #adminmenu .awaiting-mod, #adminmenu .update-plugins {
   color: #fff;
-  background: #f50057; }
+  background: #E91E63; }
 
 #adminmenu li.current a .awaiting-mod, #adminmenu li a.wp-has-current-submenu .update-plugins, #adminmenu li:hover a .awaiting-mod, #adminmenu li.menu-top:hover > a .update-plugins {
   color: #fff;
@@ -249,7 +249,7 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.curre
 /* Pointers */
 .wp-pointer .wp-pointer-content h3 {
   background-color: #ff4081;
-  border-color: #8faf91; }
+  border-color: #f50057; }
 
 .wp-pointer .wp-pointer-content h3:before {
   color: #ff4081; }
@@ -314,9 +314,9 @@ body.more-filters-opened .more-filters:hover:before, body.more-filters-opened .m
 /* jQuery UI Slider */
 .wp-slider .ui-slider-handle, .wp-slider .ui-slider-handle.ui-state-hover, .wp-slider .ui-slider-handle.focus {
   background: #ff4081;
-  border-color: #80a583;
-  -webkit-box-shadow: inset 0 1px 0 #cbdacc, 0 1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 1px 0 #cbdacc, 0 1px 0 rgba(0, 0, 0, 0.15); }
+  border-color: #F48FB1;
+  -webkit-box-shadow: inset 0 1px 0 #FCE4EC, 0 1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 0 #FCE4EC, 0 1px 0 rgba(0, 0, 0, 0.15); }
 
 /* Responsive Component */
 div#wp-responsive-toggle a:before {

@@ -505,17 +505,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
 	border: 1px solid #ccc;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-	color: #111;
 }
 
 input[type="text"],
@@ -636,7 +626,7 @@ textarea {
 .search-field {
 	background: #1A237E;
 	padding: 6px 5px !important;
-	border-bottom: 1px solid #1A237E !important;
+	border-bottom: 1px solid #1A237E;
 	width: 200px;
 }
 
@@ -921,11 +911,6 @@ textarea {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	/* -webkit-filter: grayscale(1) blur(2px);
-	-moz-filter: grayscale(1) blur(2px);
-	-o-filter: grayscale(1) blur(2px);
-	-ms-filter: grayscale(1) blur(2px);
-	filter: grayscale(1) blur(2px); */
 	width: 100%;
 	clear: both;
 	float: none;
@@ -1129,7 +1114,7 @@ textarea {
 	display: none;
 }
 
-/* Stylizing WP Widgets like Recent Posts */
+/* Stylizing WP Widget - Recent Posts */
 
 .widget_recent_entries {
 
