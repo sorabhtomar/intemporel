@@ -21,22 +21,13 @@ function intemporel_customize_register( $wp_customize ) {
 	 * Theme options for changing theme colors
 	 */
 
-	// Section - Theme Colors
-	/*$wp_customize->add_section(
-		'colors',
-		array (
-			'title'			=> __( 'Theme Colors', 'intemporel' ),
-			'description'	=> __('Change Theme Colors', 'intemporel' ),
-			'priority'		=> 100
-		)
-	);*/
-
 	// Setting - Primary Light Color
 	$wp_customize->add_setting(
 		'intemporel_primary_light',
 		array(
 			'default'		=> '#3F51B5',
 			'transport'		=> 'refresh',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
@@ -59,6 +50,7 @@ function intemporel_customize_register( $wp_customize ) {
 		array(
 			'default'		=> '#1A237E',
 			'transport'		=> 'refresh',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
@@ -81,6 +73,7 @@ function intemporel_customize_register( $wp_customize ) {
 		array(
 			'default'		=> '#E91E63',
 			'transport'		=> 'refresh',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
@@ -103,6 +96,7 @@ function intemporel_customize_register( $wp_customize ) {
 		array(
 			'default'		=> '#FFC107',
 			'transport'		=> 'refresh',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
@@ -125,6 +119,7 @@ function intemporel_customize_register( $wp_customize ) {
 		array(
 			'default'		=> '#404040',
 			'transport'		=> 'postMessage',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
@@ -141,7 +136,7 @@ function intemporel_customize_register( $wp_customize ) {
 		)
 	);
 	if ( $wp_customize->is_preview() && ! is_admin() )
-    add_action( 'wp_footer', 'intemporel_customize_preview_js', 21);
+    	add_action( 'wp_footer', 'intemporel_customize_preview_js', 21);
 }
 add_action( 'customize_register', 'intemporel_customize_register' );
 
