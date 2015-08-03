@@ -3,7 +3,7 @@ Contributor: deepakbansal
 Tags: right-sidebar, responsive-layout, custom-menu, sticky-post, theme-options, threaded-comments, translation-ready, white
 Requires at least: 4.0
 Tested up to: 4.2.3
-Stable tag: 1.0.0
+Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ Modern theme with clean layout and standard typography. Minimal colors responsiv
 
 == Description ==
 
-Intemporel is a responsive WordPress theme. It's a modern theme with clean layout and standard typography inspired from Google's material design. Intemporel is designed for blogs and magazines. It's based on Underscored (_s) framework by Automattic.
+Intemporel is a responsive WordPress theme. It's a modern theme with a clean layout and standard typography inspired by Google's material design. Intemporel is designed for blogs and magazines. It's based on Underscores framework by Automattic.
 
 * Well-commented HTML5 templates.
 * Custom template tags in `inc/template-tags.php`.
@@ -19,7 +19,11 @@ Intemporel is a responsive WordPress theme. It's a modern theme with clean layou
 * A script at `js/header.js` that makes your menu a toggled dropdown on and adds search. It's enqueued in `functions.php`.
 * Uses Google Font Roboto. Function included in `extras.php` and enqueued in `functions.php`.
 * Comes with an additional admin color scheme. You can change your admin color scheme on Users > Your Profile page.
+
 == Changelog ==
+
+= 1.0.4 =
+* Fixed bug in Theme Customizer output CSS
 
 = 1.0.3 =
 * Added Color Customization Options in Theme Customizer
@@ -32,6 +36,7 @@ Intemporel is a responsive WordPress theme. It's a modern theme with clean layou
 * Added Intemporel Admin Color Scheme
 
 == Resources ==
+
 * Underscores (http://underscores.me) (C) 2012-2015 Automattic, Inc., GNU GPL v2 or later
 * Google Font Roboto (https://www.google.com/fonts/specimen/Roboto) by Christian Robertson, Apache License, version 2.0
 * Genericons (http://genericons.com/) by Automattic, GNU GPL v2

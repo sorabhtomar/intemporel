@@ -21,10 +21,13 @@ The theme is in development stage and many more changes are in the way. To insta
 Documentation
 ---------------
 
-Please refer to the documentation website: http://bansal.io/intemporel
+Please refer to the documentation website: http://cogeek.org/projects/intemporel
 
 Changelog
 ---------------
+
+1.0.4
+* Fixed bug in Theme Customizer output CSS
 
 1.0.3
 * Added Color Customization Options in Theme Customizer

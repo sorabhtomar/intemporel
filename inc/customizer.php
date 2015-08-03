@@ -155,14 +155,14 @@ function intemporel_customize_css() {
 			input,
 			select,
 			textarea {
-				color: <?php echo get_theme_mod( 'intemporel_text_color' ); ?>;
+				color: <?php echo esc_attr( get_theme_mod( 'intemporel_text_color' ) ); ?>;
 			}
 
 			/* Primary Light Color */
 
 			a,
 			.entry-title a:hover {
-				color: <?php echo get_theme_mod( 'intemporel_primary_light' ); ?>;
+				color: <?php echo esc_attr( get_theme_mod( 'intemporel_primary_light' ) ); ?>;
 			}
 
 			button,
@@ -170,11 +170,11 @@ function intemporel_customize_css() {
 			input[type="reset"],
 			input[type="submit"],
 			.site-branding {
-				background-color: <?php echo get_theme_mod( 'intemporel_primary_light' ); ?>;
+				background-color: <?php echo esc_attr( get_theme_mod( 'intemporel_primary_light' ) ); ?>;
 			}
 
 			.site-footer {
-				border-top-color: <?php echo get_theme_mod( 'intemporel_primary_light' ); ?>;
+				border-top-color: <?php echo esc_attr( get_theme_mod( 'intemporel_primary_light' ) ); ?>;
 			}
 
 			/* Primary Dark Color */
@@ -188,11 +188,11 @@ function intemporel_customize_css() {
 			.search-toggle:hover span,
 			.search-toggle:active span,
 			.search-field {
-				background-color: <?php echo get_theme_mod( 'intemporel_primary_dark' ); ?>;
+				background-color: <?php echo esc_attr( get_theme_mod( 'intemporel_primary_dark' ) ); ?>;
 			}
 
 			.search-field {
-				border-bottom-color: <?php echo get_theme_mod( 'intemporel_primary_dark' ); ?> !important;
+				border-bottom-color: <?php echo esc_attr( get_theme_mod( 'intemporel_primary_dark' ) ); ?> !important;
 			}
 
 			/* Secondary Light Color */
@@ -201,18 +201,18 @@ function intemporel_customize_css() {
 			a:focus,
 			a:active,
 			.excerpt .entry-meta a {
-				color: <?php echo get_theme_mod( 'intemporel_secondary_light' ); ?>;
+				color: <?php echo esc_attr( get_theme_mod( 'intemporel_secondary_light' ) ); ?>;
 			}
 
 			.main-navigation .current_page_item > a,
 			.main-navigation .current-menu-item > a,
 			.main-navigation .current_page_ancestor > a {
-				border-bottom-color: <?php echo get_theme_mod( 'intemporel_secondary_light' ); ?>;
+				border-bottom-color: <?php echo esc_attr( get_theme_mod( 'intemporel_secondary_light' ) ); ?>;
 			}
 
 			/* Menu Hover Border */
 			.main-navigation a:hover {
-				border-bottom-color: <?php echo get_theme_mod( 'intemporel_menu_hover_border' ); ?>;
+				border-bottom-color: <?php echo esc_attr( get_theme_mod( 'intemporel_menu_hover_border' ) ); ?>;
 			}
 		</style>
 	<?php
