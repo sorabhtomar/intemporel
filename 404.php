@@ -3,6 +3,8 @@
  * The template for displaying 404 pages (not found).
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 get_header(); ?>

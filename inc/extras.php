@@ -6,7 +6,7 @@
  *
  * @package Intemporel
  * @author Deepak Bansal
- * @link http://bansal.io
+ * @link http://deepak.tech
  */
 
 /**

@@ -5,6 +5,8 @@
  * Contains the closing of the #content div and all content after
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 ?>
@@ -13,10 +15,23 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'intemporel' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'intemporel' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'intemporel' ), 'Intemporel', '<a href="http://cogeek.org" rel="designer">Deepak Bansal</a>' ); ?>
+			<span class="footer-message"><?php echo esc_attr( get_theme_mod( 'intemporel_footer_message' ) ); ?></span>
+			<?php if ( get_theme_mod( 'intemporel_footer_message' ) ) { ?>
+				<span class="sep"> | </span>
+			<?php } ?>
+			<?php printf( esc_html__( 'Built with %s', 'intemporel' ), '<a href="http://codes.cafe/projects/intemporel/" title="Intemporel WordPress Theme">Intemporel</a>' ); ?>
+			<span class="sep"> and </span>
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'intemporel' ) ); ?>" title="WordPress"><?php printf( esc_html__( '%s', 'intemporel' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
+
+		<nav class="social-networks">
+			<?php wp_nav_menu( array( 
+					'theme_location' => 'social',
+					'depth'          => 1,
+					'link_before'    => '<span class="screen-reader-text">',
+					'link_after'     => '</span>',
+				) ); ?>
+		</nav>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

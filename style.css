@@ -1,10 +1,10 @@
 /*
 Theme Name: Intemporel
-Theme URI: http://cogeek.org/projects/intemporel/
+Theme URI: http://codes.cafe/projects/intemporel/
 Author: Deepak Bansal
-Author URI: http://cogeek.org
+Author URI: http://deepak.tech
 Description: Modern theme with clean layout and standard typography. Minimal colors responsive WordPress theme for blogs and magazines inspired by Google's material design.
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: intemporel
@@ -444,6 +444,8 @@ table {
 .site-header:after,
 .site-content:before,
 .site-content:after,
+.social-networks ul:before,
+.social-networks ul:after,
 .site-footer:before,
 .site-footer:after {
 	content: "";
@@ -456,6 +458,7 @@ table {
 .comment-content:after,
 .site-header:after,
 .site-content:after,
+.social-networks ul:after,
 .site-footer:after {
 	clear: both;
 }
@@ -1039,7 +1042,8 @@ textarea {
 .genericon,
 .entry-footer a:before,
 .nav-previous a:before,
-.nav-next a:after {
+.nav-next a:after,
+.social-networks a:before {
 	font-size: 1.2em;
 	vertical-align: text-top;
 	text-align: center;
@@ -1264,6 +1268,139 @@ textarea:focus {
 	border-top: 4px solid #3F51B5;
 	box-shadow: 0 -1px 5px rgba(0,0,0.2);
 	padding: 1em;
+	text-align: center;
+}
+
+.site-info,
+.social-networks {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-weight: 300;
+}
+
+.social-networks {
+	line-height: 1;
+}
+
+.social-networks ul {
+	list-style: none;
+	margin: 0;
+	display: inline-block;
+}
+
+.social-networks li {
+	float: left;
+	padding-left: 1em;
+}
+
+.social-networks li:first-child {
+	padding-left: 0;
+}
+
+.social-networks a:before {
+	content: "\f415";
+	font-size: 21px;
+}
+
+.social-networks a[href*="codepen.io"]:before {
+	content: "\f216";
+}
+
+.social-networks a[href*="digg.com"]:before {
+	content: "\f221";
+}
+
+.social-networks a[href*="dribbble.com"]:before {
+	content: "\f201";
+}
+
+.social-networks a[href*="dropbox.com"]:before {
+	content: "\f225";
+}
+
+.social-networks a[href*="facebook.com"]:before {
+	content: "\f203";
+}
+
+.social-networks a[href*="flickr.com"]:before {
+	content: "\f211";
+}
+
+.social-networks a[href*="foursquare.com"]:before {
+	content: "\f226";
+}
+
+.social-networks a[href*="plus.google.com"]:before {
+	content: "\f206";
+}
+
+.social-networks a[href*="github.com"]:before {
+	content: "\f200";
+}
+
+.social-networks a[href*="instagram.com"]:before {
+	content: "\f215";
+}
+
+.social-networks a[href*="linkedin.com"]:before {
+	content: "\f208";
+}
+
+.social-networks a[href*="pinterest.com"]:before {
+	content: "\f210";
+}
+
+.social-networks a[href*="getpocket.com"]:before {
+	content: "\f224";
+}
+
+.social-networks a[href*="polldaddy.com"]:before {
+	content: "\f217";
+}
+
+.social-networks a[href*="reddit.com"]:before {
+	content: "\f222";
+}
+
+.social-networks a[href*="stumbleupon.com"]:before {
+	content: "\f223";
+}
+
+.social-networks a[href*="tumblr.com"]:before {
+	content: "\f214";
+}
+
+.social-networks a[href*="twitter.com"]:before {
+	content: "\f202";
+}
+
+.social-networks a[href*="vimeo.com"]:before {
+	content: "\f212";
+}
+
+.social-networks a[href*="wordpress.com"]:before,
+.social-networks a[href*="wordpress.org"]:before {
+	content: "\f205";
+}
+
+.social-networks a[href*="youtube.com"]:before {
+	content: "\f213";
+}
+
+.social-networks a[href*="mailto:"]:before {
+	content: "\f410";
+}
+
+.social-networks a[href*="spotify.com"]:before {
+	content: "\f515";
+}
+
+.social-networks a[href*="twitch.tv"]:before {
+	content: "\f516";
+}
+
+.social-networks a[href$="/feed/"]:before {
+	content: "\f413";
 }
 
 /*--------------------------------------------------------------
@@ -1506,6 +1643,20 @@ object {
 		margin: -2em;
 	}
 
+	.site-info,
+	.social-networks {
+		width: 50%;
+		float: left;
+	}
+
+	.site-info {
+		text-align: left;
+	}
+
+	.social-networks {
+		text-align: right;
+	}
+
 }
 
 @media screen and (min-width: 981px) {
@@ -1569,8 +1720,7 @@ object {
 	}
 
 	.site-branding,
-	.main-navigation,
-	.site-footer {
+	.main-navigation {
 		padding-left: 10%;
 		padding-right: 10%;
 	}

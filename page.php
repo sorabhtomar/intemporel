@@ -8,6 +8,8 @@
  * different template.
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 get_header(); ?>

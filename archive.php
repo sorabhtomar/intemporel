@@ -5,6 +5,8 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 get_header(); ?>

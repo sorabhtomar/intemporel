@@ -3,6 +3,8 @@
  * Intemporel functions and definitions
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 if ( ! function_exists( 'intemporel_setup' ) ) :
@@ -43,6 +45,7 @@ function intemporel_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'intemporel' ),
+		'social' => esc_html__( 'Social Networks', 'intemporel' ),
 	) );
 
 	/*

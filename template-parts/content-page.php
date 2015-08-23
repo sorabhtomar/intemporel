@@ -3,6 +3,8 @@
  * The template used for displaying page content in page.php
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 ?>

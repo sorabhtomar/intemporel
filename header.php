@@ -5,6 +5,8 @@
  * Displays all of the <head> section and everything up till <div id="content">
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 ?><!DOCTYPE html>

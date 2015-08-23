@@ -3,6 +3,8 @@
  * Template part for displaying poster-post.
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 $thumb_id = get_post_thumbnail_id();

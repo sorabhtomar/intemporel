@@ -3,6 +3,8 @@
  * Intemporel Theme Customizer
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 /**
@@ -90,7 +92,7 @@ function intemporel_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Setting - Secondary Dark Color
+	// Setting - Menu Hover Border Color
 	$wp_customize->add_setting(
 		'intemporel_menu_hover_border',
 		array(
@@ -100,7 +102,7 @@ function intemporel_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Control - Secondary Dark Color
+	// Control - Menu Hover Border Color
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control (
 			$wp_customize, 'intemporel_menu_hover_border',
@@ -135,8 +137,37 @@ function intemporel_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	if ( $wp_customize->is_preview() && ! is_admin() )
-    	add_action( 'wp_footer', 'intemporel_customize_preview_js', 21);
+
+	// Section - Theme Options
+	$wp_customize->add_section(
+		'intemporel_theme_options',
+		array (
+			'title'			=> __( 'Theme Options', 'amidstsky' ),
+			'description'	=> __('More options.', 'amidstsky' ),
+			'priority'		=> 500
+		)
+	);
+
+	// Setting - Copyright Message
+	$wp_customize->add_setting(
+		'intemporel_footer_message',
+		array(
+			'default'		=> 'Copyright 2015 All rights reserved.',
+			'transport'		=> 'postMessage',
+			'sanitize_callback' => 'sanitize_text_field'
+		)
+	);
+
+	// Control - Copyright Message
+	$wp_customize->add_control(
+		'intemporel_footer_message',
+		array(
+			'section'		=> 'intemporel_theme_options',
+			'label'			=> __( 'Footer Message', 'intemporel' ),
+			'type'			=> 'text'
+		)
+	);
+
 }
 add_action( 'customize_register', 'intemporel_customize_register' );
 

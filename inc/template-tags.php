@@ -5,6 +5,8 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 if ( ! function_exists( 'the_posts_navigation' ) ) :

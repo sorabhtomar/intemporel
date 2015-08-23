@@ -4,6 +4,8 @@
  * See: https://jetpack.me/
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 /**

@@ -26,6 +26,10 @@ Please refer to the documentation website: http://cogeek.org/projects/intemporel
 Changelog
 ---------------
 
+1.0.5
+* Users can add custom message in footer.
+* Support for social networks menu in footer.
+
 1.0.4
 * Fixed bug in Theme Customizer output CSS
 

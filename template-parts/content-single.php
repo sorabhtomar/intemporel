@@ -3,6 +3,8 @@
  * Template part for displaying single posts.
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 ?>

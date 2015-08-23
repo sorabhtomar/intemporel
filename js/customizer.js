@@ -38,4 +38,10 @@
 		});
 	});
 
+	wp.customize( 'intemporel_footer_message', function ( value ) {
+		value.bind( function( to ) {
+			$( '.footer-message' ).text( to );
+		} );
+	} );
+
 } )( jQuery );

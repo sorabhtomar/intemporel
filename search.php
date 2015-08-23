@@ -3,6 +3,8 @@
  * The template for displaying search results pages.
  *
  * @package Intemporel
+ * @author Deepak Bansal
+ * @link http://deepak.tech
  */
 
 get_header(); ?>
