@@ -21,7 +21,7 @@ The theme is in development stage and many more changes are in the way. To insta
 Documentation
 ---------------
 
-Please refer to the documentation website: http://cogeek.org/projects/intemporel
+Please refer to the documentation website: http://codes.cafe/projects/intemporel
 
 Changelog
 ---------------
