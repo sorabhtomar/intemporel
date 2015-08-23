@@ -16,7 +16,7 @@ Intemporel is a responsive WordPress theme. It's a modern theme with a clean lay
 * Well-commented HTML5 templates.
 * Custom template tags in `inc/template-tags.php`.
 * Extra functions `inc/extras.php` like fonts.
-* A script at `js/header.js` that makes your menu a toggled dropdown on and adds search. It's enqueued in `functions.php`.
+* A script at `js/script.js` that makes your menu a toggled dropdown on and adds search. It's enqueued in `functions.php`.
 * Uses Google Font Roboto. Function included in `extras.php` and enqueued in `functions.php`.
 * Comes with an additional admin color scheme. You can change your admin color scheme on Users > Your Profile page.
 
