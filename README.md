@@ -26,6 +26,9 @@ Please refer to the documentation website: http://codes.cafe/projects/intemporel
 Changelog
 ---------------
 
+1.0.6
+* Addressed text-domain bug
+
 1.0.5
 * Users can add custom message in footer.
 * Support for social networks menu in footer.

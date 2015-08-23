@@ -142,8 +142,8 @@ function intemporel_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'intemporel_theme_options',
 		array (
-			'title'			=> __( 'Theme Options', 'amidstsky' ),
-			'description'	=> __('More options.', 'amidstsky' ),
+			'title'			=> __( 'Theme Options', 'intemporel' ),
+			'description'	=> __('More options.', 'intemporel' ),
 			'priority'		=> 500
 		)
 	);

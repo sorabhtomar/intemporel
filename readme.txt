@@ -22,6 +22,9 @@ Intemporel is a responsive WordPress theme. It's a modern theme with a clean lay
 
 == Changelog ==
 
+= 1.0.6 =
+* Addressed text-domain bug
+
 = 1.0.5 =
 * Users can add custom message in footer.
 * Support for social networks menu in footer.
