@@ -768,7 +768,7 @@ textarea {
 }
 
 .nav-previous a:before,
-.previous a:before {
+.previous:before {
 	content: '\f430';
 }
 
@@ -782,7 +782,7 @@ textarea {
 }
 
 .nav-next a:after,
-.next a:after {
+.next:after {
 	content: '\f429';
 }
 
@@ -1043,9 +1043,9 @@ textarea {
 
 .genericon,
 .entry-footer a:before,
-.previous a:before,
+.previous:before,
 .nav-previous a:before,
-.next a:after,
+.next:after,
 .nav-next a:after,
 .social-networks a:before {
 	font-size: 1.2em;
@@ -1072,9 +1072,9 @@ textarea {
 }
 
 .entry-footer a:before,
-.previous a:before,
+.previous:before,
 .nav-previous a:before,
-.next a:after,
+.next:after,
 .nav-next a:after {
 	color: #404040;
 }
