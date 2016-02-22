@@ -767,6 +767,7 @@ textarea {
 	padding-right: 1em;
 }
 
+.nav-previous a:before,
 .previous a:before {
 	content: '\f430';
 }
@@ -780,6 +781,7 @@ textarea {
 	padding-left: 1em;
 }
 
+.nav-next a:after,
 .next a:after {
 	content: '\f429';
 }
@@ -1041,7 +1043,9 @@ textarea {
 
 .genericon,
 .entry-footer a:before,
+.previous a:before,
 .nav-previous a:before,
+.next a:after,
 .nav-next a:after,
 .social-networks a:before {
 	font-size: 1.2em;
@@ -1068,7 +1072,9 @@ textarea {
 }
 
 .entry-footer a:before,
+.previous a:before,
 .nav-previous a:before,
+.next a:after,
 .nav-next a:after {
 	color: #404040;
 }
