@@ -1,8 +1,8 @@
 === Intemporel ===
 Contributor: deepakbansal
 Tags: right-sidebar, responsive-layout, custom-menu, sticky-post, theme-options, threaded-comments, translation-ready, white
-Requires at least: 4.0
-Tested up to: 4.2.3
+Requires at least: 4.3
+Tested up to: 4.4.2
 Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,6 +21,9 @@ Intemporel is a responsive WordPress theme. It's a modern theme with a clean lay
 * Comes with an additional admin color scheme. You can change your admin color scheme on Users > Your Profile page.
 
 == Changelog ==
+
+= 1.0.7 =
+* Removed the_posts_navigation and the_post_navigation function definitions from template-tags.php
 
 = 1.0.6 =
 * Addressed text-domain bug

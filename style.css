@@ -753,26 +753,26 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main .posts-navigation,
+.site-main .pagination,
 .site-main .post-navigation {
 	margin: 1.5em 0;
 	overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
+.pagination .previous,
 .post-navigation .nav-previous {
 	float: left;
 	width: 50%;
 	padding-right: 1em;
 }
 
-.nav-previous a:before {
+.previous a:before {
 	content: '\f430';
 }
 
 .comment-navigation .nav-next,
-.posts-navigation .nav-next,
+.pagination .next,
 .post-navigation .nav-next {
 	float: right;
 	text-align: right;
@@ -780,7 +780,7 @@ textarea {
 	padding-left: 1em;
 }
 
-.nav-next a:after {
+.next a:after {
 	content: '\f429';
 }
 
@@ -1249,7 +1249,7 @@ textarea:focus {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll .pagination, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
 	display: none;
 }
