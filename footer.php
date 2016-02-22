@@ -19,7 +19,7 @@
 			<?php if ( get_theme_mod( 'intemporel_footer_message' ) ) { ?>
 				<span class="sep"> | </span>
 			<?php } ?>
-			<?php printf( esc_html__( 'Built with %s', 'intemporel' ), '<a href="http://codes.cafe/projects/intemporel/" title="Intemporel WordPress Theme">Intemporel</a>' ); ?>
+			<?php printf( esc_html__( 'Built with %s', 'intemporel' ), '<a href="http://dbansal.com" title="Intemporel WordPress Theme">Intemporel</a>' ); ?>
 			<span class="sep"> and </span>
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'intemporel' ) ); ?>" title="WordPress"><?php printf( esc_html__( '%s', 'intemporel' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
