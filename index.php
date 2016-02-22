@@ -10,7 +10,7 @@
  *
  * @package Intemporel
  * @author Deepak Bansal
- * @link http://deepak.tech
+ * @link http://www.dbansal.com
  */
 
 get_header(); ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					
+
 				?>
 
 				<?php
@@ -50,12 +50,18 @@ get_header(); ?>
 					while ( have_posts() ) : the_post();
 
 						get_template_part( 'template-parts/content', get_post_format() );
-						
+
 					endwhile;
 				?>
 
 
-			<?php the_posts_navigation(); ?>
+			<?php
+				the_posts_pagination( array(
+					'prev_text'          => __( 'Previous Page', 'enswe' ),
+					'next_text'          => __( 'Next Page', 'enswe' ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'enswe' ) . ' </span>',
+				) );
+			?>
 
 		<?php else : ?>
 

@@ -21,10 +21,13 @@ The theme is in development stage and many more changes are in the way. To insta
 Documentation
 ---------------
 
-Please refer to the documentation website: http://codes.cafe/projects/intemporel
+Please refer to the documentation website: http://www.dbansal.com
 
 Changelog
 ---------------
+
+1.0.7
+* Removed the_posts_navigation and the_post_navigation function definitions from template-tags.php
 
 1.0.6
 * Addressed text-domain bug

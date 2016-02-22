@@ -4,7 +4,7 @@
  *
  * @package Intemporel
  * @author Deepak Bansal
- * @link http://deepak.tech
+ * @link http://www.dbansal.com
  */
 
 if ( ! function_exists( 'intemporel_setup' ) ) :
@@ -127,7 +127,7 @@ add_action( 'widgets_init', 'intemporel_widgets_init' );
 function intemporel_scripts() {
 	// Add Google Fonts URl
 	wp_enqueue_style( 'intemporel-fonts', intemporel_fonts() );
-	
+
 	// Add Genericons, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.3.1' );
 
