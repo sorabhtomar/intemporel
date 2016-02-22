@@ -57,9 +57,9 @@ get_header(); ?>
 
 			<?php
 				the_posts_pagination( array(
-					'prev_text'          => __( 'Previous Page', 'enswe' ),
-					'next_text'          => __( 'Next Page', 'enswe' ),
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'enswe' ) . ' </span>',
+					'prev_text'          => __( 'Previous Page', 'intemporel' ),
+					'next_text'          => __( 'Next Page', 'intemporel' ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'intemporel' ) . ' </span>',
 				) );
 			?>
 
