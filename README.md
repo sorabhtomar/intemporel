@@ -28,6 +28,7 @@ Changelog
 
 1.1.1
 * Clean up
+* Removed Admin Color Scheme
 
 1.0.7
 * Removed the_posts_navigation and the_post_navigation function definitions from template-tags.php

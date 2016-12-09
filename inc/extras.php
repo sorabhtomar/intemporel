@@ -117,21 +117,6 @@ function intemporel_excerpt ($excerpt) {
 add_filter( 'the_excerpt', 'intemporel_excerpt' );
 
 /**
- * Adds a color scheme to admin area similar to the theme's styles
- *
- * Users can change their color schemes in Users > Your Profile
- */
-
-function intemporel_color_scheme() {
-	wp_admin_css_color(
-		'intemporel', __( 'Intemporel', 'intemporel' ),
-		get_stylesheet_directory_uri() . '/admin-color-schemes/intemporel/colors.css',
-		array( '#303f9f', '#3F51B5', '#ff4081', '#f50057' )
-	);
-}
-add_action( 'admin_init', 'intemporel_color_scheme');
-
-/**
  * Post Class Filter
  *
  * Adds extra classes to certain templates
