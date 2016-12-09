@@ -4,7 +4,7 @@
  *
  * @package Intemporel
  * @author Deepak Bansal
- * @link http://www.dbansal.com
+ * @link http://db.fyi
  */
 
 $thumb_id = get_post_thumbnail_id();

@@ -21,10 +21,13 @@ The theme is in development stage and many more changes are in the way. To insta
 Documentation
 ---------------
 
-Please refer to the documentation website: http://www.dbansal.com
+Please refer to the documentation website: http://db.fyi
 
 Changelog
 ---------------
+
+1.1.1
+* Clean up
 
 1.0.7
 * Removed the_posts_navigation and the_post_navigation function definitions from template-tags.php

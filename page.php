@@ -9,7 +9,7 @@
  *
  * @package Intemporel
  * @author Deepak Bansal
- * @link http://www.dbansal.com
+ * @link http://db.fyi
  */
 
 get_header(); ?>
